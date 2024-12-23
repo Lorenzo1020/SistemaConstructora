@@ -13,6 +13,9 @@ public class Principal {
 		// Declarar las variables
 		Scanner lectura = null;
 
+		System.out.println("Se agrega esto nuevo al modulo principal");
+		int numero1 = 0;
+
 		int numeroCasa, menuPrinc, subMenu, indice;
 		float precio;
 		String tipoCasa;
@@ -34,7 +37,7 @@ public class Principal {
 			System.out.println("7---BUSCAR POR TIPO");
 			System.out.println("8---CALCULAR DINERO INVERTIDO");
 			System.out.println("9----ELIMINAR POR NUM. CASA");
-			System.out.println("10---EDITAR BUSCANDO POR NUM. CASA"); //PRECIO
+			System.out.println("10---EDITAR BUSCANDO POR NUM. CASA"); // PRECIO
 			System.out.println("11----SALIR");
 
 			lectura = new Scanner(System.in);
@@ -64,7 +67,7 @@ public class Principal {
 
 					// Agregar a la lista
 					imp.guardar(casa);
-				
+
 				} catch (Exception e) {
 					// TODO: handle exception
 					System.out.println("Error al guardar " + e.getMessage());
@@ -182,9 +185,9 @@ public class Principal {
 				try {
 					System.out.println("Ingrese el tipo casa a buscar");
 					lectura = new Scanner(System.in);
-					tipoCasa=lectura.nextLine();
-					
-					//Buscar
+					tipoCasa = lectura.nextLine();
+
+					// Buscar
 					System.out.println(imp.buscarXtipoCasa(tipoCasa));
 				} catch (Exception e) {
 					// TODO: handle exception
@@ -197,11 +200,11 @@ public class Principal {
 				try {
 					System.out.println("Ingresa el num casa a eliminar");
 					lectura = new Scanner(System.in);
-					numeroCasa=lectura.nextInt();
-					
-					//Eliminar
+					numeroCasa = lectura.nextInt();
+
+					// Eliminar
 					imp.eliminarXnumCasa(numeroCasa);
-					
+
 				} catch (Exception e) {
 					// TODO: handle exception
 					System.out.println("Error al eliminar");
