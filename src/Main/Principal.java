@@ -15,6 +15,9 @@ public class Principal {
 
 		System.out.println("Se agrega esto nuevo al modulo principal");
 		int numero1 = 0;
+		
+		
+		System.out.println("Trabajando en la segunda rama");
 
 		int numeroCasa, menuPrinc, subMenu, indice;
 		float precio;
